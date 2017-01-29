@@ -37,11 +37,14 @@ body {
     .header .navbar-toggle .icon-bar {
       background-color: #888; }
   .header .navbar-collapse {
-    margin-top: 20px; }
+    margin-top: 20px;
+    max-height: none;
+    padding-bottom: 10px; }
     .header .navbar-collapse li {
       display: block;
       list-style: none;
-      margin: 8px 0 20px 10px; }
+      margin: 8px 0 0 10px;
+      padding: 5px 0; }
       .header .navbar-collapse li a {
         color: #fff;
         font-size: 1.4rem;
@@ -56,14 +59,68 @@ body {
         @media screen and (min-width: 992px) {
           .header .navbar-collapse li a {
             font-size: 1.8rem; } }
-      .header .navbar-collapse li.active a {
-        color: #ff9933 !important; }
-      .header .navbar-collapse li a:hover {
+      .header .navbar-collapse li:hover > a {
         background: none;
-        text-decoration: underline; }
+        color: #ff9933;
+        transition: color 150ms ease-out; }
+      .header .navbar-collapse li.parent {
+        position: relative; }
+        .header .navbar-collapse li.parent > a::after {
+          content: '';
+          background: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2026%2026%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M7.85%2010l5.02%204.9%205.27-4.9c.65-.66%201.71-.66%202.36%200%20.65.67.65%201.74%200%202.4l-6.45%206.1c-.33.33-.76.5-1.18.5-.43%200-.86-.17-1.18-.5l-6.21-6.1c-.65-.66-.65-1.74%200-2.41.66-.65%201.72-.65%202.37.01z%22/%3E%3C/svg%3E") center center no-repeat;
+          display: inline-block;
+          width: 1em;
+          height: 1.3em;
+          vertical-align: top;
+          transition: background 150ms ease-out; }
+          @media screen and (min-width: 768px) {
+            .header .navbar-collapse li.parent > a::after {
+              height: 1em; } }
+        .header .navbar-collapse li.parent ul {
+          padding: 0;
+          margin: 0;
+          position: static; }
+          .header .navbar-collapse li.parent ul li {
+            margin: 0;
+            padding-bottom: 0;
+            white-space: nowrap; }
+            .header .navbar-collapse li.parent ul li a {
+              padding: 10px 20px; }
+            @media screen and (min-width: 768px) {
+              .header .navbar-collapse li.parent ul li {
+                background: #262626;
+                border-bottom: 1px solid #353535; }
+                .header .navbar-collapse li.parent ul li a {
+                  padding: 20px 20px 19px; }
+                .header .navbar-collapse li.parent ul li:hover a {
+                  color: #fff;
+                  background: #353535; } }
+          @media screen and (min-width: 768px) {
+            .header .navbar-collapse li.parent ul {
+              display: none;
+              border: 2px solid #262626;
+              border-radius: 5px;
+              position: absolute;
+              top: 30px;
+              right: 0; }
+              .header .navbar-collapse li.parent ul::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 0;
+                height: 0;
+                border: 10px solid #262626;
+                border-color: transparent transparent #262626 transparent;
+                top: -20px;
+                right: 30px; } }
+        .header .navbar-collapse li.parent:hover a::after {
+          background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2026%2026%22%3E%3Cpath%20fill%3D%22%23f93%22%20d%3D%22M7.85%2010l5.02%204.9%205.27-4.9c.65-.66%201.71-.66%202.36%200%20.65.67.65%201.74%200%202.4l-6.45%206.1c-.33.33-.76.5-1.18.5-.43%200-.86-.17-1.18-.5l-6.21-6.1c-.65-.66-.65-1.74%200-2.41.66-.65%201.72-.65%202.37.01z%22/%3E%3C/svg%3E"); }
+        .header .navbar-collapse li.parent:hover ul {
+          display: block; }
       .header .navbar-collapse li.last {
         display: inline-block;
-        margin-top: 0; }
+        margin-top: 10px;
+        padding-bottom: 0; }
         .header .navbar-collapse li.last a {
           color: #ff9933 !important;
           padding: 6px 19px;
@@ -73,12 +130,18 @@ body {
             text-decoration: none;
             color: #e38527;
             border: 2px solid #e38527; }
+        @media screen and (min-width: 768px) {
+          .header .navbar-collapse li.last {
+            margin-top: 0; } }
       @media screen and (min-width: 768px) {
         .header .navbar-collapse li {
-          margin: 8px 0 0 15px; } }
+          margin: 8px 0 0 10px;
+          padding-top: 0;
+          padding-bottom: 25px; } }
     @media screen and (min-width: 768px) {
       .header .navbar-collapse {
-        float: right; } }
+        float: right;
+        padding-bottom: 0; } }
 
 .content {
   clear: both;
@@ -103,7 +166,7 @@ body {
         margin-top: 30px; } }
 
 .promo {
-  background: url(../img/home-page_main-bg.jpg) center center no-repeat;
+  background: url(../img/home-page_main-bg.jpg) left center no-repeat;
   background-size: cover;
   overflow: hidden; }
   .promo::after {
@@ -167,7 +230,7 @@ body {
     @media screen and (min-width: 992px) {
       .promo .t4 {
         font-size: 65px;
-        margin-top: 120px; } }
+        margin-top: 55px; } }
   .promo .showvideo-mb {
     display: block;
     margin: 230px auto 40px;
@@ -210,7 +273,7 @@ body {
       padding-top: 40px;
       position: static;
       width: auto;
-      max-width: 450px; } }
+      max-width: none; } }
 
 .features__lead {
   font-size: 32px;
@@ -655,6 +718,13 @@ body {
   margin-bottom: 48px;
   resize: vertical; }
 
+.contact-us__submit {
+  display: block;
+  margin: auto; }
+  @media screen and (min-width: 768px) {
+    .contact-us__submit {
+      float: right; } }
+
 .prefooter {
   background: #ccc;
   padding: 35px 0 30px;
@@ -684,6 +754,14 @@ body {
   font-size: 20px;
   margin-bottom: 10px;
   text-transform: uppercase; }
+
+.prefooter__social {
+  text-align: center; }
+  .prefooter__social .prefooter__title {
+    margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .prefooter__social {
+      text-align: left; } }
 
 .footer-links {
   color: #666;
@@ -784,6 +862,12 @@ body {
 .btn-xlg {
   font-size: 24px; }
 
+.btn .raquo {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .btn .raquo {
+      display: inline; } }
+
 @media screen and (min-width: 768px) {
   .btn {
     font-size: 16px;
@@ -866,6 +950,7 @@ body {
   display: none; }
 
 .collapsible__content {
+  color: #7b7b7b;
   display: none;
   padding: 20px 10px 10px; }
   .collapsible__content h4 {
