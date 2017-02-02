@@ -81,7 +81,7 @@ a:hover{
 #buy .bot .block.last{
 	font:500 20px roboto;}
 #bot{
-	background:url(img/bot_line.jpg) no-repeat center 0 #cccccc;
+	background:url(../img/bot_line.jpg) no-repeat center 0 #cccccc;
 	padding:75px 0 50px;}
 #bot .title{
 	float:left;
@@ -153,7 +153,7 @@ a:hover{
 /*front*/
 #f_top{
 	height:730px;
-	background:url(img/front_top.jpg) no-repeat center 0;}
+	background:url(../img/front_top.jpg) no-repeat center 0;}
 #f_top .row > *{
 	float:left;
 	width:100%;}
@@ -234,7 +234,7 @@ a:hover{
     line-height: 1.5!important;
 	font:300 16px roboto;}
 #space{
-	background:url(img/bg2.jpg) no-repeat center 0;
+	background:url(../img/bg2.jpg) no-repeat center 0;
 	height:445px;
 	color:#fff}
 #space .title{
@@ -303,7 +303,7 @@ a:hover{
 	width:100%;}
 #contact{
 	height:900px;
-	background:url(img/contacts.jpg) no-repeat center 0;
+	background:url(../img/contacts.jpg) no-repeat center 0;
 	color:#fff;}
 #contact .title{
 	float:left;
@@ -378,7 +378,7 @@ a:hover{
 	width:93px;
 	height:93px;
 	margin:0 4px 5px;
-	background:url(img/soc.png) no-repeat;}
+	background:url(../img/soc.png) no-repeat;}
 #contact .right_soc .soc .s2{
 	background-position:-104px 0;}
 #contact .right_soc .soc .s3{
@@ -424,7 +424,7 @@ a:hover{
 	clear:left;
 	padding-left:22px;
 	margin-bottom:15px;
-	background:url(img/star.png) no-repeat 0 5px;}
+	background:url(../img/star.png) no-repeat 0 5px;}
 #forensics .list.counts {
 	counter-increment: count-me;
 }
@@ -450,7 +450,7 @@ a:hover{
 
 /*how*/
 #how{
-    background:url(img/bot_line.jpg) no-repeat center bottom;
+    background:url(../img/bot_line.jpg) no-repeat center bottom;
 	margin-top:75px;}
 .cops{
 	color:#000;}
@@ -481,13 +481,13 @@ a:hover{
 	font:300 20px roboto;
 	padding-bottom:30px;}
 #how2{
-	background:url(img/bot_line.jpg) no-repeat center bottom #f4f4f4;
+	background:url(../img/bot_line.jpg) no-repeat center bottom #f4f4f4;
 	padding:65px 0 80px;}
 #how3{
-    background:url(img/bot_line.jpg) no-repeat center bottom;
+    background:url(../img/bot_line.jpg) no-repeat center bottom;
 	padding:60px 0;}
 #space2{
-	background:url(img/bg2.jpg) no-repeat center -130px;
+	background:url(../img/bg2.jpg) no-repeat center -130px;
 	padding:80px 0;}
 #space2 .title{
 	color:#fff;
@@ -606,7 +606,6 @@ a:hover{
 
 }
 #media{
-    background:url(img/bot_line.jpg) no-repeat center bottom;
 	margin-top:75px;}
 #media .list{
 	margin-top:5px;
@@ -616,4 +615,4 @@ a:hover{
 	clear:left;
 	padding-left:22px;
 	margin-bottom:15px;
-	background:url(img/star.png) no-repeat 0 5px;}
+	background:url(../img/star.png) no-repeat 0 5px;}

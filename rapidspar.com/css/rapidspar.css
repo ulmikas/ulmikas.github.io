@@ -1117,3 +1117,9 @@ body {
 
 .collapsible__trigger:checked + .collapsible__label + .collapsible__content {
   display: block; }
+
+
+.about p {
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
