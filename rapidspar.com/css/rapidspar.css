@@ -353,7 +353,9 @@ body {
 .forwhat__title {
   font-size: 24px;
   font-weight: 500;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
   @media screen and (min-width: 768px) {
     .forwhat__title {
       font-size: 32px;
