@@ -36,7 +36,7 @@
 							<ul>
 								<li><a href="how.html">How it works</a></li>
 								<li><a href="forensics.html">Data aquisition</a></li>
-								
+
 							</ul>
 						</li>
 						<li class="parent">
@@ -62,15 +62,15 @@
         <p>Following are some of the most common symptoms when recovering drives with software-only solutions. These symptoms can be caused by a large variety of different problems. This is a general outline of what you can expect from RapidSpar when working on such cases.</p>
         <div class="technology__features">
             <div class="technology__feature">
-              <h4>Likely to recover</h4>
+              <h4>High Recoverability</h4>
               <p>Have great chances to recover all your data from damaged or malfunctioning drive</p>
             </div>
             <div class="technology__feature">
-              <h4>Will recover in some cases</h4>
+              <h4>Medium recoverability</h4>
               <p>Recovering almost all of your data from damaged drive with some data lost</p>
             </div>
             <div class="technology__feature">
-              <h4>Unlikely to recover</h4>
+              <h4>Low recoverabiliry</h4>
               <p>Pray for chance to recover something with zero expectations</p>
             </div>
         </div>
@@ -78,15 +78,15 @@
         <h2 class="technology-section-title">Likely to recover</h2>
         <section class="technology-section">
           <h3 class="technology-section__subtitle">Drive spins up and identifies correctly in the BIOS, but does not identify within Windows or MacOS.</h3>
-          <p>This usually happens due to bad sectors within critical file system metadata. Standard operating systems have no way of dealing with that and will fail to identify such drives.</p>
-          <p>RapidSpar is designed to handle this situation and will usually be able to recover the data.</p>
+					<p>This usually happens due to bad sectors within critical file system metadata. Standard operating systems have no way of dealing with that and will fail to identify such drives.</p>
+					<p>RapidSpar is designed to handle this situation and will usually be able to recover the data.</p>
           <div class="technology-section__comparison collapsible">
             <input type="checkbox" name="" id="collapsible1" value="" class="collapsible__trigger">
             <label class="collapsible__label" for="collapsible1">Cases for comparison</label>
             <div class="collapsible__content">
               <h4>Software tools: Limited to drives visible by the OS</h4>
-              <p>The standard file system mounting process will automatically begin as soon as a drive is connected to Windows or MacOS. While mounting the drive, the operating system will reach the first unreadable 8 sector block within critical file system metadata, attempt to read it a number of times, and if it’s not successful then it will either give up (MacOS), or restart mounting from the beginning (Windows). Mounting will fail in this manner even if the contents of the unreadable block are not necessary to mount the drive. Standard operating systems do not work with blocks smaller than 8, so even if just 1 sector is bad, the entire 8 sector block it belongs to will be missed and the drive will not be mounted. If the mounting process fails to complete then the drive will remain invisible to the operating system. </p>
-              <h4>RapidSpar: Intelligent file system parsing </h4>
+              <p>The standard file system mounting process will automatically begin as soon as a drive is connected to Windows or MacOS. While mounting the drive, the operating system will reach the first unreadable 8 sector block within critical file system metadata, attempt to read it a number of times, and if it’s not successful then it will either give up (MacOS), or restart mounting from the beginning (Windows). Mounting will fail in this manner even if the contents of the unreadable block are not necessary to mount the drive. Standard operating systems do not work with blocks smaller than 8, so even if just 1 sector is bad, the entire 8 sector block it belongs to will be missed and the drive will not be mounted. If the mounting process fails to complete then the drive will remain invisible to the operating system.</p>
+              <h4>RapidSpar: Intelligent file system parsing</h4>
               <p>RapidSpar loads the file system in an entirely different manner. First it will clone as much file system metadata as possible to the healthy target drive, including every good sector within every unreadable block. From there it will work only with the target drive to parse the file system and build a file tree. Occasional unreadable sectors within file system metadata will not be an issue, provided they do not restrict access to data which is strictly necessary to load the file tree. Some file system elements have multiple copies, which will be located and used automatically in place of elements that have bad sectors. This process allows RapidSpar to successfully load the file tree and recover the files in the majority of such cases. Even if the file tree can’t be loaded due to logical corruption, RapidSpar can be used to take a full clone of the drive (handling read instability issues in the process), allowing you to run logical recovery scans on the clone afterward.</p>
             </div>
           </div>
@@ -94,16 +94,16 @@
 
         <section class="technology-section">
           <h3 class="technology-section__subtitle">Drive is identified correctly, but recovering it with software tools works too slowly to be practical.</h3>
-          <p>Software tools do not have the necessary control over the drive to do any kind of read instability handling. As a result, every read command that falls on a bad sector takes 4-20+ seconds to process, during which the drive causes further damage to itself. It’s not a problem if there are a few bad sectors, but if there are a lot, the drive’s condition will be deteriorating faster than the rate of recovery, preventing the case from being solved.</p>
-          <p>RapidSpar automatically uses reset commands to abort fruitless processing, effectively skipping bad sectors within a second in most cases. This allows the recovery to proceed much faster and the drive to degrade much slower, allowing for more difficult cases to be solved. </p>
+					<p>Software tools do not have the necessary control over the drive to do any kind of read instability handling. As a result, every read command that falls on a bad sector takes 4-20+ seconds to process, during which the drive causes further damage to itself. It’s not a problem if there are a few bad sectors, but if there are a lot, the drive’s condition will be deteriorating faster than the rate of recovery, preventing the case from being solved.</p>
+					<p>RapidSpar automatically uses reset commands to abort fruitless processing, effectively skipping bad sectors within a second in most cases. This allows the recovery to proceed much faster and the drive to degrade much slower, allowing for more difficult cases to be solved.</p>
           <div class="technology-section__comparison collapsible">
             <input type="checkbox" name="" id="collapsible2" value="" class="collapsible__trigger">
             <label class="collapsible__label" for="collapsible2">Cases for comparison</label>
             <div class="collapsible__content">
               <h4>Software tools: Waiting indefinitely, hoping the drive responds</h4>
-              <p>If a read command falls on a bad sector, it will be handled by layers of system software (BIOS/OS) that the software application can’t control. The best-case scenario is that the computer waits without crashing until the drive responds to the read command on its own. Every time the read command falls on a bad sector, the drive will spend somewhere from 4 seconds to over 20 seconds making hundreds of failed read attempts, then conclude the sector is bad, write to its firmware area (located on the platters) to update various logs, and finally respond with an error message, at which point the software application can send the next read command. This process wastes time, quickly causes further physical degradation of the drive, and risks firmware corruption. </p>
+              <p>If a read command falls on a bad sector, it will be handled by layers of system software (BIOS/OS) that the software application can’t control. The best-case scenario is that the computer waits without crashing until the drive responds to the read command on its own. Every time the read command falls on a bad sector, the drive will spend somewhere from 4 seconds to over 20 seconds making hundreds of failed read attempts, then conclude the sector is bad, write to its firmware area (located on the platters) to update various logs, and finally respond with an error message, at which point the software application can send the next read command. This process wastes time, quickly causes further physical degradation of the drive, and risks firmware corruption.</p>
               <h4>RapidSpar: Quickly skipping bad sectors with resets</h4>
-              <p>RapidSpar’s proprietary ATA controller can automatically terminate bad sector processing. If a drive does not respond to a read command within a fraction of a second, RapidSpar uses different reset commands to force the drive to stop processing it early. This alone eliminates the large majority of fruitless processing, and in most cases also stops the drive from registering bad sectors in its firmware logs, substantially decreasing the chances of causing further damage. If a serious internal exception causes the drive to stop responding to all commands, as a last resort RapidSpar automatically repowers it to seamlessly continue the recovery process. </p>
+              <p>RapidSpar’s proprietary ATA controller can automatically terminate bad sector processing. If a drive does not respond to a read command within a fraction of a second, RapidSpar uses different reset commands to force the drive to stop processing it early. This alone eliminates the large majority of fruitless processing, and in most cases also stops the drive from registering bad sectors in its firmware logs, substantially decreasing the chances of causing further damage. If a serious internal exception causes the drive to stop responding to all commands, as a last resort RapidSpar automatically repowers it to seamlessly continue the recovery process.</p>
             </div>
           </div>
         </section>
@@ -111,15 +111,15 @@
         <section class="technology-section">
           <h3 class="technology-section__subtitle">Drive identified correctly, but accessing it causes a crash/freeze/restart at some point during the recovery process.</h3>
           <p>Standard computers are designed with overall system stability as the main goal. To operate reliably and predictably, they work with drives only within the strict confines of the standard ATA protocol. This imposes limits on software data recovery tools, which have to use the computer’s generic hardware and system software (BIOS/OS) to access damaged drives. Degraded drives can fail to abide by ATA protocol rules, causing the system to freeze, restart, intermittently drop the connection to the drive, or otherwise stop working.</p>
-          <p>RapidSpar’s hardware, firmware, and software are all specifically built to handle a wide range of different situations and will not crash as a result of unexpected operation from the drive. </p>
+          <p>RapidSpar’s hardware, firmware, and software are all specifically built to handle a wide range of different situations and will not crash as a result of unexpected operation from the drive.</p>
           <div class="technology-section__comparison collapsible">
             <input type="checkbox" name="" id="collapsible3" value="" class="collapsible__trigger">
             <label class="collapsible__label" for="collapsible3">Cases for comparison</label>
             <div class="collapsible__content">
-              <h4>Software tools: Indirect access causes big problems </h4>
-              <p>Software data recovery tools do not have direct control or exclusive access to the drive. Software tools can only send read commands to the OS API; with luck, the communication attempt passes through each layer of system software without any issues, and the drive is capable of consistently processing read commands. </p>
+              <h4>Software tools: Indirect access causes big problems</h4>
+              <p>Software data recovery tools do not have direct control or exclusive access to the drive. Software tools can only send read commands to the OS API; with luck, the communication attempt passes through each layer of system software without any issues, and the drive is capable of consistently processing read commands.</p>
               <h4>OS STRUCTURE GRAPHIC</h4>
-              <p>But if the drive isn’t operating as expected, communication can break down at any point, halting the recovery effort. If the drive is responding with errors, any of the system software layers could have an exception and take the whole system offline. If the drive has an internal exception when processing a bad sector — for example, while updating firmware logs — it may not respond within a reasonable timeframe, which would also cause the computer to freeze, restart, or drop the connection to the drive. To make matters worse, because the software tool has no direct connection to the drive, it may not be aware when the connection has been dropped. In that case, it will keep trying to recover data, but none of its attempts will actually go through, leaving the drive to idle. After 20-30 seconds of idling, modern drives execute self-scans, attempting to seek out and reallocate bad sectors. This state quickly degrades the drive; entering it is one of the worst things that can happen to a degrading drive. </p>
+              <p>But if the drive isn’t operating as expected, communication can break down at any point, halting the recovery effort. If the drive is responding with errors, any of the system software layers could have an exception and take the whole system offline. If the drive has an internal exception when processing a bad sector — for example, while updating firmware logs — it may not respond within a reasonable timeframe, which would also cause the computer to freeze, restart, or drop the connection to the drive. To make matters worse, because the software tool has no direct connection to the drive, it may not be aware when the connection has been dropped. In that case, it will keep trying to recover data, but none of its attempts will actually go through, leaving the drive to idle. After 20-30 seconds of idling, modern drives execute self-scans, attempting to seek out and reallocate bad sectors. This state quickly degrades the drive; entering it is one of the worst things that can happen to a degrading drive.</p>
               <h4>RapidSpar: Exclusive drive access and control </h4>
               <p>RapidSpar has direct control of and exclusive access to drives. At every step of the recovery process, it uses proprietary software, firmware, and hardware designed specifically to deal with degraded drives.</p>
             </div>
@@ -138,9 +138,9 @@
               <p>Software data recovery tools usually read data in large blocks of sectors (typically 512-4,096). This is mostly due to the combination of the following three limitations: timing overheads imposed by the system architecture which reduce speed of data access by up to 75% at small block sizes; risk of one of the system software layers crashing when processing a read error; and the inability to terminate bad sector processing. Reading in large blocks lets the application use fewer commands to read the drive, reducing the consequences of these limitations. If the drive fails to read a block, that entire block is usually forgotten — a loss of 512-4,096 sectors. Because a hard drive will fail to read a block if even a single sector within it is bad, thousands of good sectors remain unread, corrupting a larger number of files.</p>
               <p>Some Linux-based cloning tools can be configured to use small read block sizes and do multiple drive passes to retry missed blocks one sector at a time. However all the aforementioned limitations are still there, severely restricting these capabilities. Even with Linux, there is no control over how bad sectors are processed, and every failed read attempt takes up at least a few seconds as a result. If just a few sectors are bad, this isn’t an issue. If there are more, reading in small blocks and then retrying them sector by sector will force Linux to spend far too much time processing failed read commands for the recovery process to be practical or safe. Linux-based tools also generally can’t target specific files or folders for recovery, so they must take full partition clones, recovering countless unnecessary blocks of sectors, further increasing recovery time and the potential for something to go wrong.</p>
               <h4>RapidSpar: Faster, with more data</h4>
-              <p>An efficient architecture and the ability to quickly stop bad sector processing has a substantial impact — RapidSpar can often dig into an entire bad block one sector at a time before a software tool finishes waiting on a single failed read command.</p>
-              <p>The RapidSpar architecture has very low timing overheads for processing of individual commands, so it can use a much smaller read block size, typically from 128 to 256, without sacrificing speed. Blocks that fail to read can be retried one sector at a time to ensure that all good sectors within each bad block are recovered.</p>
-              <p>RapidSpar understands file systems, allowing you to target critical file system information and then specific files and folders, usually eliminating the need for time-consuming full-drive cloning. As well, RapidSpar identifies exactly which files are corrupted by bad sectors, simplifying recovery validation.</p>
+							<p>An efficient architecture and the ability to quickly stop bad sector processing has a substantial impact — RapidSpar can often dig into an entire bad block one sector at a time before a software tool finishes waiting on a single failed read command.</p>
+							<p>The RapidSpar architecture has very low timing overheads for processing of individual commands, so it can use a much smaller read block size, typically from 128 to 256, without sacrificing speed. Blocks that fail to read can be retried one sector at a time to ensure that all good sectors within each bad block are recovered.</p>
+							<p>RapidSpar understands file systems, allowing you to target critical file system information and then specific files and folders, usually eliminating the need for time-consuming full-drive cloning. As well, RapidSpar identifies exactly which files are corrupted by bad sectors, simplifying recovery validation.</p>
             </div>
           </div>
         </section>
