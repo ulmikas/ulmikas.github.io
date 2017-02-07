@@ -18,10 +18,12 @@ $(document).ready(function() {
             post_data = {
                 'name': $('input[name=name]').val(),
                 'email': $('input[name=email]').val(),
+                'phone': $('input[name=phone]').val(),
+                'company': $('input[name=company]').val(),
                 'message': $('textarea[name=message]').val()
             };
             //Ajax post data to server
-            $.post('src/contact.php', post_data, function(response) {
+            $.post('contact.php', post_data, function(response) {
                 if (response.type == 'error') {
                     output = '<div class="error">' + response.text + '</div>';
                 } else {
