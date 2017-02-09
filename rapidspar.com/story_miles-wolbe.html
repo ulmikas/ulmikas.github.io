@@ -59,26 +59,70 @@
       </div>
       <div class="testimonial">
 				<div class="testimonial__avatar">
-					<img src="img/avatar_kens-repair.jpg" alt="">
+					<img src="img/avatar_ali-hack.jpg" alt="">
 				</div>
-				<div class="testimonial__name">Ken Pennington</div>
-				<div class="testimonial__company">Ken's PC repair</div>
-				<object class="testimonial__link"><a class="testimonial__link" href="http://kenspcrepair.biz" target="_blank" rel="nofollow noopener">kenspcrepair.biz</a></object>
+				<div class="testimonial__name">Miles Wolbe</div>
+				<div class="testimonial__company">The Recovery Room: Data Recovery Services</div>
+				<a class="testimonial__link" href="https://tinyapps.org/When" target="_blank" rel="nofollow noopener">tinyapps.org/when</a>
 			</div>
 
       <div class="container">
         <div class="story__header">
-          To date our recovery rate is just short of 80% (TOP TECH). It paid for itself in 5 weeks! (INDEX, TOP BUSINESS).
+          When I first read about RapidSpar, I thought it was little more than a simple duplicator with ddrescue onboard. I couldn't have been more wrong (INDEX, TOP TECH).
         </div>
         <div class="story__text">
-					<p>First test subject was a Samsung drive that wasn't seen by Windows, and was seen in Linux but wouldn't mount. Was able to image to a new drive with RapidSpar and all the data was there!</p>
-					<p>Second candidate arrived today. WD5000AAKS built on 20Jan2010. PC would not boot. Drive would spin, and made no odd noise. Slaved drive to both a bench Windows and Linux machine, neither recognized it. Imaged with RapidSpar in about 90 minutes. Replace drive in clients machine. Windows 10 went through its automatic repair, rebooted, and the machine is as good as new!</p>
-					<p>Fourth drive. 500GB Seagate slim drive (reassembled netbook without noting the model number). Drive not viable in Windows or Linux. Not able to clone drive, but was able to successfully grab all the data from the user profiles!</p>
-					<p>Drive #5 was a 1TB Seagate Barracuda in a Lenovo desktop PC that wouldn't boot. Was able to backup some of the user files using FABS, but had a long list of failures. Attempted to clone using HD Clone, but the process froze just a few minutes in. Imaged with RapidSpar in just under 3 hours. Installed the imaged drive back in the desktop and it fired right up.  This was the last drive we worked with and have shipped it off to the next shop. We went ahead and purchased this device. This will give us an option to offer customers when they have data they would like to recover, but isn't the end of the world if they don't. For 'mission critical' drives/data we will continue to refer them to data labs as this is not our area of expertise.</p>
-					<p>To date our recovery rate is just short of 80% (TOP TECH). This does not include any drives that we determine to be beyond the ability of this unit. For example, if it clicks when we power it on we immediately disconnect it and refer the client to a data recovery lab. As for the price, it's very affordable. It paid for itself in 5 weeks! (INDEX, TOP BUSINESS)  Thanks to Serge and Vladimir at DeepSpar for the support!</p>
+					<p>Miles Wolbe https://tinyapps.org/When I first read about RapidSpar, I thought it was little more than a simple duplicator with ddrescue onboard. I couldn't have been more wrong (INDEX, TOP TECH). RapidSpar offers drive-to-drive cloning (imaging requires Data Acquisition Add-on) and some automated firmware fixes. But much more remarkable was its ability to recover files and folders from unmountable disks (without having to clone first) via the Windows-based RapidSpar Assistant as explained here. RapidSpar's USB3 port can be connected to a Windows PC (or a Mac running Windows) for extended control through the RapidSpar Assistant (RSA) software. The main function of RSA is to allow the user to target specific files/folders for recovery on NTFS, HFS+, EXT 2/3/4, FAT32, exFAT, and XFS file systems. The selected files/folders will first be saved to the Target drive, and then copied from the Target drive to any folder accessible by the PC." This was a MASSIVE improvement over trying to clone an entire failing drive just to recover a relatively small number of desired files. For this comparison, I used a non-mounting (under Linux, OS X, and Windows) and sporadically clicking (audio file here) Hitachi Travelstar 5K750-500 HTS547550A9E384, a 2.5" 500GB SATA HDD. It was pulled from a MacBook Pro and originally formatted HFS+ (unencrypted, but wrapped in a CoreStorage volume). DeepSpar's Rapid Drive Tester (RDT) reported 4800 UNC errors. ddrescue, HDDSuperClone, and Rapidspar were all run (in that order) with their default settings. I had to clone rather than image with the Rapidspar, since the Data Acquisition Add-on is not available on the demo unit. RapidSpar Assistant was also used to bypass the need for cloning altogether, as explained above and detailed below.</p>
+					<p>
+						<b>ddrescue</b>
+						<ul>
+							<li>Run time: 6h8m51s</li>
+							<li>Total recovered: 153937 directories, 619737 files</li>
+							<li>Operating environment: OS X 10.9.5</li>
+							<li>Log attached (ddrmapfile.txt)</li>
+							<li>Occassional loud clicking while imaging</li>
+						</ul>
+					</p>
+					<p>
+						<b>HDDSuperClone</b>
+						<ul>
+							<li>Run time: 8h30m24s</li>
+							<li>Total recovered: 153937 directories, 619737 files</li>
+							<li>Operating environment: Linux Mint 18</li>
+							<li>Log attached (hsclog.txt)</li>
+							<li>Frequent loud clicking while imaging</li>
+						</ul>
+					</p>
+					<p>
+						<b>RapidSpar (in cloning mode)</b>
+						<ul>
+							<li>Run time: 3h17m15s</li>
+							<li>Total recovered: 153941 directories, 619758 files</li>
+							<li>Operating environment: N/A</li>
+							<li>Screenshot attached (rapidspar_cloning_result.jpg)</li>
+							<li>Had to run RapidNebula (remote diagnostics and automatic firmware fixes/optimizations) before cloning (a demo restriction - normally not required apparently), but that might have been what fixed the loud clicking noise, since it disappeared for good within a few moments.</li>
+						</ul>
+					</p>
+					<p>
+						<b>RapidSpar Assistant</b>
+						<ul>
+							<li>Run time: 4m27s (from unmountable drive to complete file system being available for file/folder recovery)</li>
+							<li>Total recovered: RapidSpar Assistant reported processing 650,278 file names (not all of which would necessarily be recoverable or valid). Tested recovery by successfully copying commonly requested data.</li>
+							<li>Operating environment: Windows 7</li>
+							<li>Screenshots attached (rsa*.png)</li>
+							<li>No clicking while recovering data</li>
+						</ul>
+					</p>
+					<p>
+						<b>Notes:</b>
+						<ul>
+							<li>ddrescue and HDDSuperClone images would not mount in Linux (despite specifying offset, sizelimit, etc) or OS X (without first repairing via DiskWarrior), but did mount in Windows 10 via OSFMount and MacDrive 10 (Apple's own read-only HFS+ driver proved too buggy, causing BSODs when attempting to list image contents via Beyond Compare, tree for Windows, etc).</li>
+							<li>After cloning, the Rapidspar target drive was plugged into a Mac (with hardware write blocker); all three volumes (EFI, Macintosh HD, and Recovery HD) appeared in diskutil and Macintosh HD automatically mounted normally in the Finder.</li>
+							<li>A list of the few extra files that the Rapidspar cloning process recovered is attached (extra.txt). The single file of primary interest, ./Users/username/Documents/Microsoft User Data/Saved Attachments/John Smith Letter of Rec, is an interesting case. There were TWO files by that (almost) exact same name in the directory; one was a DOC file and the other DOCX, but neither had an extension. It turns out that one of them had a trailing space.</li>
+						</ul>
+					</p>
         </div>
       </div>
-			<div class="story__actions">
+      <div class="story__actions">
         <a href="testimonials.html" class="btn btn-secondary btn-xlg">Read all stories&nbsp;&raquo;</a>
         <span class="story__actions-or">or</span>
         <a href="index.html" class="link story__link">Get back to the Main page</a>
@@ -97,10 +141,8 @@
 					<div class="col-xs-6 col-sm-2">
 						<div class="prefooter__title">RapidSpar</div>
 						<ul class="footer-links">
-							<li><a href="technology.html">Technology</a></li>
 							<li><a href="how.html">How it Works</a></li>
-							<li><a href="cases.html">Cases we solve</a></li>
-							<li><a href="forensics.html">Add-ons</a></li>
+							<li><a href="forensics.html">Data Acquisition</a></li>
 							<li><a href="http://portal.rapidspar.com/portal/">Log In</a></li>
 							<li><a href="http://portal.rapidspar.com/buy/">Buy Now</a></li>
 						</ul>
@@ -109,10 +151,8 @@
 						<div class="prefooter__title">Company</div>
 						<ul class="footer-links">
 							<li><a href="about.html">About us</a></li>
-							<li><a href="testimonials.html">Stories</a></li>
-							<li><a href="support.html">Support</a></li>
-							<li><a href="media.html">Media</a></li>
 							<li><a href="index.html#contacts">Contact us</a></li>
+							<li><a href="media.html">Media</a></li>
 						</ul>
 					</div>
 					<div class="col-xs-12 col-sm-4 prefooter__social">
@@ -169,5 +209,14 @@
         </div>
     </div>
 </div><!-- .wrapper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+<!-- <script type="text/javascript" src="src/js/my.js"></script> -->
+
+
+
+
+
 </body>
 </html>
