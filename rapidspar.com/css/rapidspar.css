@@ -927,6 +927,10 @@ body {
     margin-bottom: 1em;
 }
 
+.technology a {
+    color: #ff9933;
+}
+
 @media screen and (min-width: 768px) {
     .technology {
         font-size: 18px;
