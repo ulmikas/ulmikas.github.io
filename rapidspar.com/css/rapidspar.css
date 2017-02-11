@@ -423,6 +423,11 @@ body {
 .reviews__action .btn {
   white-space: normal; }
 
+.testimonials-block {
+  background: #f4f4f4;
+  margin-bottom: 40px;
+  padding: 20px 0 10px; }
+
 .testimonials {
   background: #f4f4f4;
   padding: 3rem 0; }
@@ -601,8 +606,8 @@ body {
   font-size: 16px; }
   .technology p {
     margin-bottom: 1em; }
-  .technology a {
-    color: #ff9933; }
+    .technology p a {
+      color: #ff9933; }
   @media screen and (min-width: 768px) {
     .technology {
       font-size: 18px;
