@@ -264,7 +264,7 @@ body {
 .promo__image {
   position: absolute;
   top: 150px;
-  left: -50px;
+  right: -50px;
   width: 300px; }
   .promo__image img {
     max-width: 100%; }
@@ -646,6 +646,7 @@ body {
 .technology__features {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-between;
   margin-top: 2em;
@@ -1220,6 +1221,9 @@ body {
     @media screen and (min-width: 768px) {
       .collapsible__content p + h4 {
         margin-top: 70px; } }
+  .collapsible__content img {
+    max-width: 100%;
+    margin-bottom: 1em; }
 
 .collapsible__trigger:checked + .collapsible__label::before {
   content: '-'; }
