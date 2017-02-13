@@ -42,4 +42,21 @@ $(document).ready(function() {
         $(this).css('border-color', '');
         $("#contact_results").slideUp();
     });
+
+
+    $( ".frame-1" ).on( "click", function() {
+        $('.s1').hide();
+        $(this).hide();
+        $('.firsframe').attr('src','anim/rapidspar-p1/rapidspar-p1.html');
+    });
+    $( ".frame-2" ).on( "click", function() {
+        $('.s2').hide();
+        $(this).hide();
+        $('.secondframe').attr('src','anim/rapidspar-p2/rapidspar-p2.html');
+    });
+    $( ".frame-3" ).on( "click", function() {
+        $('.s3').hide();
+        $(this).hide();
+        $('.threeframe').attr('src','anim/rapidspar-p3/rapidspar-p3.html');
+    });
 });

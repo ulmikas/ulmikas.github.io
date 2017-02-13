@@ -635,6 +635,9 @@ body {
       font-size: 22px;
       padding: 80px 0; } }
 
+.adapters {
+  padding-bottom: 0; }
+
 .technology__title {
   font-weight: 300;
   font-size: 32px;
