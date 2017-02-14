@@ -59,4 +59,8 @@ $(document).ready(function() {
         $(this).hide();
         $('.threeframe').attr('src','anim/rapidspar-p3/rapidspar-p3.html');
     });
+
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').focus()
+    })
 });
