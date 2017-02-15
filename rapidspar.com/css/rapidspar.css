@@ -645,15 +645,20 @@ body {
   .technology p {
     margin-bottom: 1em; }
     .technology p a {
-      color: #ff9933; }
+      color: #ff9933;
+      font-size: 28px; }
   @media screen and (min-width: 768px) {
     .technology {
       font-size: 18px;
-      padding: 60px 0; } }
+      padding: 60px 0; }
+      .technology a {
+        font-size: 32px; } }
   @media screen and (min-width: 992px) {
     .technology {
       font-size: 22px;
-      padding: 80px 0; } }
+      padding: 80px 0; }
+      .technology a {
+        font-size: 36px; } }
 
 .adapters {
   padding-bottom: 0; }
