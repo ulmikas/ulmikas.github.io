@@ -189,17 +189,15 @@ body {
   .promo .t1 {
     color: #ff9933;
     display: block;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 300;
     margin: 30px 0; }
     @media screen and (min-width: 768px) {
       .promo .t1 {
-        font-size: 24px;
-        margin: 50px 0; } }
+        margin: 30px 0 45px; } }
     @media screen and (min-width: 992px) {
       .promo .t1 {
-        font-size: 30px;
-        margin: 50px 0; } }
+        font-size: 26px; } }
   .promo .t2 {
     font-size: 36px;
     font-weight: 300;
@@ -222,28 +220,28 @@ body {
     font-weight: 300; }
     @media screen and (min-width: 640px) {
       .promo .t3 {
-        font-size: 42px; } }
+        font-size: 40px; } }
     @media screen and (min-width: 768px) {
       .promo .t3 {
-        font-size: 56px; } }
+        font-size: 50px; } }
     @media screen and (min-width: 992px) {
       .promo .t3 {
-        font-size: 70px; } }
+        font-size: 60px; } }
   .promo .t4 {
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 500;
     line-height: 1;
-    margin-bottom: .3em;
+    margin-bottom: .7em;
     color: #fff; }
     @media screen and (min-width: 640px) {
       .promo .t4 {
-        font-size: 42px; } }
+        font-size: 28px; } }
     @media screen and (min-width: 768px) {
       .promo .t4 {
-        font-size: 56px; } }
+        font-size: 32px; } }
     @media screen and (min-width: 992px) {
       .promo .t4 {
-        font-size: 70px; } }
+        font-size: 36px; } }
   .promo .showvideo-mb {
     display: block;
     margin: 230px auto 40px;
@@ -259,20 +257,20 @@ body {
         width: auto; } }
     @media screen and (min-width: 768px) {
       .promo .showvideo-mb {
-        margin: 50px 0 130px; } }
+        margin: 50px 0 100px; } }
 
 .promo__image {
   position: absolute;
-  top: 150px;
+  top: 185px;
   right: -50px;
   width: 300px; }
   .promo__image img {
     max-width: 100%; }
   @media screen and (min-width: 460px) {
     .promo__image {
-      left: 50%;
-      top: -30px;
-      width: 400px;
+      left: 290px;
+      top: 70px;
+      width: 300px;
       right: auto; } }
   @media screen and (min-width: 640px) {
     .promo__image {
@@ -282,7 +280,7 @@ body {
       top: 30px;
       left: 60%;
       width: 100%;
-      max-width: 500px; } }
+      max-width: 550px; } }
   @media screen and (min-width: 1200px) {
     .promo__image {
       left: auto;
