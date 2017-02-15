@@ -880,6 +880,17 @@ body {
     .service-section__title {
       font-size: 40px; } }
 
+.service-section__highlight {
+  font-size: 22px; }
+  .service-section__highlight span {
+    color: #ff9933; }
+  @media screen and (min-width: 768px) {
+    .service-section__highlight {
+      font-size: 24px; } }
+  @media screen and (min-width: 992px) {
+    .service-section__highlight {
+      font-size: 28px; } }
+
 .media__caption {
   font-size: 14px;
   margin-top: 3px;
