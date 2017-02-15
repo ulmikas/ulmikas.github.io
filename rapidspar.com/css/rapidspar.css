@@ -342,12 +342,34 @@ body {
   background: url(../img/bg2.jpg) top center no-repeat;
   background-size: cover;
   color: #fff;
-  padding: 40px 0 50px;
+  padding: 40px 0 10px;
   position: relative;
   text-align: center; }
+  .forwhat__column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: auto;
+    padding: 0 20px 40px; }
+    @media screen and (min-width: 768px) {
+      .forwhat__column {
+        margin: 0;
+        max-width: 375px;
+        padding: 0 40px 40px 0; }
+        .forwhat__column + .forwhat__column {
+          padding-right: 0;
+          padding-left: 40px; } }
+    @media screen and (min-width: 992px) {
+      .forwhat__column {
+        max-width: 485px; } }
+    @media screen and (min-width: 1200px) {
+      .forwhat__column {
+        max-width: 585px; } }
   @media screen and (min-width: 768px) {
     .forwhat {
-      padding: 50px 0 60px; }
+      display: flex;
+      justify-content: center;
+      padding: 50px 0 10px; }
       .forwhat::after {
         content: '';
         position: absolute;
@@ -356,12 +378,6 @@ body {
         bottom: 0;
         width: 2px;
         background: #fff; } }
-
-.forwhat__owners {
-  margin-bottom: 40px; }
-  @media screen and (min-width: 768px) {
-    .forwhat__owners {
-      margin-bottom: 0; } }
 
 .forwhat__title {
   font-size: 24px;
@@ -389,6 +405,12 @@ body {
     .forwhat__text {
       font-size: 20px;
       margin-bottom: 30px; } }
+
+.forwhat__action {
+  margin-top: auto; }
+  @media screen and (min-width: 768px) {
+    .forwhat__action a {
+      font-size: 26px; } }
 
 .reviews {
   background: url(../img/home-page__reviews.jpg) center center no-repeat;
