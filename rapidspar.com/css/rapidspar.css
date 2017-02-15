@@ -290,7 +290,8 @@ body {
   font-size: 32px;
   font-weight: 300;
   line-height: 1.1;
-  margin: 60px 0; }
+  margin: 60px 0;
+  text-align: justify; }
   @media screen and (min-width: 768px) {
     .features__lead {
       font-size: 42px; } }
@@ -362,7 +363,7 @@ body {
         max-width: 485px; } }
     @media screen and (min-width: 1200px) {
       .forwhat__column {
-        max-width: 585px; } }
+        max-width: 615px; } }
   @media screen and (min-width: 768px) {
     .forwhat {
       display: flex;
