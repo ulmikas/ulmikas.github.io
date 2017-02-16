@@ -77,14 +77,15 @@
           When I first read about RapidSpar, I thought it was little more than a simple duplicator with ddrescue onboard. I couldn't have been more wrong.
         </div>
         <div class="story__text">
-					<p>Miles Wolbe https://tinyapps.org/When I first read about RapidSpar, I thought it was little more than a simple duplicator with ddrescue onboard. I couldn't have been more wrong. RapidSpar offers drive-to-drive cloning (imaging requires Data Acquisition Add-on) and some automated firmware fixes. But much more remarkable was its ability to recover files and folders from unmountable disks (without having to clone first) via the Windows-based RapidSpar Assistant as explained here. RapidSpar's USB3 port can be connected to a Windows PC (or a Mac running Windows) for extended control through the RapidSpar Assistant (RSA) software. The main function of RSA is to allow the user to target specific files/folders for recovery on NTFS, HFS+, EXT 2/3/4, FAT32, exFAT, and XFS file systems. The selected files/folders will first be saved to the Target drive, and then copied from the Target drive to any folder accessible by the PC." This was a MASSIVE improvement over trying to clone an entire failing drive just to recover a relatively small number of desired files. For this comparison, I used a non-mounting (under Linux, OS X, and Windows) and sporadically clicking (audio file here) Hitachi Travelstar 5K750-500 HTS547550A9E384, a 2.5" 500GB SATA HDD. It was pulled from a MacBook Pro and originally formatted HFS+ (unencrypted, but wrapped in a CoreStorage volume). DeepSpar's Rapid Drive Tester (RDT) reported 4800 UNC errors. ddrescue, HDDSuperClone, and Rapidspar were all run (in that order) with their default settings. I had to clone rather than image with the Rapidspar, since the Data Acquisition Add-on is not available on the demo unit. RapidSpar Assistant was also used to bypass the need for cloning altogether, as explained above and detailed below.</p>
+					<p>When I first read about RapidSpar, I thought it was little more than a simple duplicator with ddrescue onboard. I couldn't have been more wrong.</p>
+					<p>RapidSpar offers drive-to-drive cloning (imaging requires Data Acquisition Add-on) and some automated firmware fixes. But much more remarkable was its ability to recover files and folders from unmountable disks (without having to clone first) via the Windows-based RapidSpar Assistant. This was a MASSIVE improvement over trying to clone an entire failing drive just to recover a relatively small number of desired files.</p>
+					<p>For this comparison, I used a non-mounting (under Linux, OS X, and Windows) and sporadically clicking (<a href="media/click5.m4a">audio file here</a>) Hitachi Travelstar 5K750-500 HTS547550A9E384, a 2.5" 500GB SATA HDD. It was pulled from a MacBook Pro and originally formatted HFS+ (unencrypted, but wrapped in a CoreStorage volume). DeepSpar's Rapid Drive Tester (RDT) reported 4800 UNC errors. ddrescue, HDDSuperClone, and Rapidspar were all run (in that order) with their default settings. I had to clone rather than image with the Rapidspar, since the Data Acquisition Add-on is not available on the demo unit. RapidSpar Assistant was also used to bypass the need for cloning altogether, as explained above and detailed below.</p>
 					<p>
 						<b>ddrescue</b>
 						<ul>
 							<li>Run time: 6h8m51s</li>
 							<li>Total recovered: 153937 directories, 619737 files</li>
 							<li>Operating environment: OS X 10.9.5</li>
-							<li>Log attached (ddrmapfile.txt)</li>
 							<li>Occassional loud clicking while imaging</li>
 						</ul>
 					</p>
@@ -94,7 +95,6 @@
 							<li>Run time: 8h30m24s</li>
 							<li>Total recovered: 153937 directories, 619737 files</li>
 							<li>Operating environment: Linux Mint 18</li>
-							<li>Log attached (hsclog.txt)</li>
 							<li>Frequent loud clicking while imaging</li>
 						</ul>
 					</p>
@@ -104,7 +104,6 @@
 							<li>Run time: 3h17m15s</li>
 							<li>Total recovered: 153941 directories, 619758 files</li>
 							<li>Operating environment: N/A</li>
-							<li>Screenshot attached (rapidspar_cloning_result.jpg)</li>
 							<li>Had to run RapidNebula (remote diagnostics and automatic firmware fixes/optimizations) before cloning (a demo restriction - normally not required apparently), but that might have been what fixed the loud clicking noise, since it disappeared for good within a few moments.</li>
 						</ul>
 					</p>
@@ -114,7 +113,6 @@
 							<li>Run time: 4m27s (from unmountable drive to complete file system being available for file/folder recovery)</li>
 							<li>Total recovered: RapidSpar Assistant reported processing 650,278 file names (not all of which would necessarily be recoverable or valid). Tested recovery by successfully copying commonly requested data.</li>
 							<li>Operating environment: Windows 7</li>
-							<li>Screenshots attached (rsa*.png)</li>
 							<li>No clicking while recovering data</li>
 						</ul>
 					</p>
@@ -123,7 +121,6 @@
 						<ul>
 							<li>ddrescue and HDDSuperClone images would not mount in Linux (despite specifying offset, sizelimit, etc) or OS X (without first repairing via DiskWarrior), but did mount in Windows 10 via OSFMount and MacDrive 10 (Apple's own read-only HFS+ driver proved too buggy, causing BSODs when attempting to list image contents via Beyond Compare, tree for Windows, etc).</li>
 							<li>After cloning, the Rapidspar target drive was plugged into a Mac (with hardware write blocker); all three volumes (EFI, Macintosh HD, and Recovery HD) appeared in diskutil and Macintosh HD automatically mounted normally in the Finder.</li>
-							<li>A list of the few extra files that the Rapidspar cloning process recovered is attached (extra.txt). The single file of primary interest, ./Users/username/Documents/Microsoft User Data/Saved Attachments/John Smith Letter of Rec, is an interesting case. There were TWO files by that (almost) exact same name in the directory; one was a DOC file and the other DOCX, but neither had an extension. It turns out that one of them had a trailing space.</li>
 						</ul>
 					</p>
         </div>
