@@ -287,11 +287,17 @@ body {
     .promo__image {
       top: 30px;
       left: 60%;
-      width: auto; } }
+      width: 500px; } }
+  @media screen and (min-width: 992px) {
+    .promo__image {
+      left: 50%;
+      width: auto;
+      top: 70px; } }
   @media screen and (min-width: 1200px) {
     .promo__image {
       left: auto;
-      right: 15px; } }
+      right: 15px;
+      top: 30px; } }
 
 .features__lead {
   font-size: 32px;
