@@ -40,7 +40,8 @@ body {
   .header .navbar-collapse {
     margin-top: 20px;
     max-height: none;
-    padding-bottom: 10px; }
+    padding-bottom: 30px;
+    height: calc(100vh - 80px); }
     .header .navbar-collapse li {
       display: block;
       list-style: none;
@@ -296,7 +297,7 @@ body {
   @media screen and (min-width: 1200px) {
     .promo__image {
       left: auto;
-      right: 15px;
+      right: 55px;
       top: 30px; } }
 
 .features__lead {
@@ -505,13 +506,18 @@ body {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-right: -30px; }
+          justify-content: space-between; }
   .testimonials__grid .testimonial {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 30%;
             flex: 1 1 30%;
-    margin: 0 30px 20px 0; }
+    margin: 0 0 20px; }
+    @media screen and (min-width: 480px) {
+      .testimonials__grid .testimonial {
+        margin: 0 30px 20px 0; } }
+  @media screen and (min-width: 480px) {
+    .testimonials__grid {
+      margin-right: -30px; } }
 
 .testimonial {
   background: #fff;
