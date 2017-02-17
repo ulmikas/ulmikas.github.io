@@ -126,7 +126,6 @@
             <div class="collapsible__content">
               <h4>Software applications: Limited to drives visible by the OS</h4>
               <p>The standard file system mounting process will automatically begin as soon as a drive is connected to Windows or MacOS. While mounting the drive, the operating system will reach the first unreadable 8 sector block within critical file system metadata, attempt to read it a number of times, and if it’s not successful then it will either give up (MacOS), or restart mounting from the beginning (Windows). Mounting will fail in this manner even if the contents of the unreadable block are not necessary to mount the drive. Standard operating systems do not work with blocks smaller than 8, so even if just 1 sector is bad, the entire 8 sector block it belongs to will be missed and the drive will not be mounted. If the mounting process fails to complete then the drive will remain invisible to the operating system.</p>
-              <p>But if the drive isn’t operating as expected, communication can break down at any point, halting the recovery effort. If the drive is responding with errors, any of the system software layers could have an exception and take the whole system offline. If the drive has an internal exception when processing a bad sector — for example, while updating firmware logs — it may not respond within a reasonable timeframe, which would also cause the computer to freeze, restart, or drop the connection to the drive. To make matters worse, because the software tool has no direct connection to the drive, it may not be aware when the connection has been dropped. In that case, it will keep trying to recover data, but none of its attempts will actually go through, leaving the drive to idle. After 20-30 seconds of idling, modern drives execute self-scans, attempting to seek out and reallocate bad sectors. This state quickly degrades the drive; entering it is one of the worst things that can happen to a degrading drive.</p>
               <h4>RapidSpar: Intelligent file system parsing</h4>
               <p>RapidSpar loads the file system in an entirely different manner. First it will clone as much file system metadata as possible to the healthy target drive, including every good sector within every unreadable block. From there it will work only with the target drive to parse the file system and build a file tree. Occasional bad sectors within file system metadata will not be an issue, provided they do not restrict access to data which is strictly necessary to load the file tree. Some file system elements have multiple copies, which will be located and used automatically in place of elements that have bad sectors. This process allows RapidSpar to successfully load the file tree and recover the files in the majority of such cases. Even if the file tree can’t be loaded due to logical corruption, RapidSpar can still be used to take a full clone of the drive, handling read instability issues and allowing you to run logical recovery scans on the clone afterward.</p>
             </div>
@@ -153,8 +152,8 @@
         </section>
 
 				<h2 class="technology-section-title">RapidSpar in Action</h2>
+				<p>This animation is a great overview of the concepts we covered up to this point, showing how RapidSpar and software applications recover the same unstable drive. We are assuming the software application was able to correctly identify the drive and that every layer of the architecture involved in communicating with the drive is working flawlessly. In other words, it is a comparison between the absolute best-case scenario for software applications and an average case for RapidSpar. It is slowed down by 3 times to make it easier to understand:</p>
 				<section class="technology-section embed-responsive embed-responsive-16by9">
-					<p>This animation is a great overview of the concepts we covered up to this point, showing how RapidSpar and software applications recover the same unstable drive. We are assuming the software application was able to correctly identify the drive and that every layer of the architecture involved in communicating with the drive is working flawlessly. In other words, it is a comparison between the absolute best-case scenario for software applications and an average case for RapidSpar. It is slowed down by 3 times to make it easier to understand:</p>
 					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Prb239fvxxE" frameborder="0" allowfullscreen></iframe>
 				</section>
 
@@ -225,7 +224,7 @@
 					</div>
 			</div>
 		</div>
-		
+
     </div>
 		<div class="contacts">
 			<div class="container">
