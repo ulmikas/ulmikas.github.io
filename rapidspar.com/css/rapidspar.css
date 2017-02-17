@@ -855,7 +855,8 @@ body {
   padding: 40px 0;
   font-size: 16px; }
   .service p {
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    line-height: 1.4; }
   @media screen and (min-width: 768px) {
     .service {
       font-size: 18px;
@@ -1108,6 +1109,11 @@ body {
   .prefooter__logo img, .prefooter__logo svg {
     max-width: 100%; }
 
+.prefooter__address {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 1em; }
+
 .prefooter__title {
   color: #666;
   font-size: 20px;
@@ -1131,6 +1137,7 @@ body {
   .footer-links li {
     padding: 5px 0; }
     .footer-links li a {
+      font-size: 18px;
       color: #666; }
       .footer-links li a:hover {
         color: #333; }
