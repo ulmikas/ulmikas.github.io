@@ -60,7 +60,7 @@ $(document).ready(function() {
         $('.threeframe').attr('src','anim/rapidspar-p3/rapidspar-p3.html');
     });
 
-    $('#myModal').on('shown.bs.modal', function () {
-      $('#myInput').focus()
-    })
+    $("body").on("click", ".modal-backdrop, #myModal .close, #myModal .btn", function() {
+        $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+    });
 });
