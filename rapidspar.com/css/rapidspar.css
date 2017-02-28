@@ -251,8 +251,7 @@ body {
         font-size: 38px; } }
   .promo .showvideo-mb {
     display: block;
-    margin: 230px auto 40px;
-    max-width: 300px; }
+    margin: 230px auto 40px;}
     @media screen and (min-width: 460px) {
       .promo .showvideo-mb {
         margin-top: 50px;
