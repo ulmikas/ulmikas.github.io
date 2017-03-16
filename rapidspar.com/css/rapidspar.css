@@ -1403,8 +1403,11 @@ body {
 .pc-choise {
   position: absolute;
     right: 10px;
-    bottom: 150px;
+    bottom: 120px;
     z-index: 2;
+}
+.pc-choise img {
+  width: 120px;
 }
 @media screen and (min-width: 460px) {
   .pc-choise {
@@ -1413,18 +1416,25 @@ body {
 }
 @media screen and (min-width: 768px) {
   .pc-choise {
-    bottom: 170px;
-    right: -20px;
+    bottom: 140px;
+    right: -40px;
+  }
+  .pc-choise img {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .pc-choise {
+    right: 0;
   }
 }
 @media screen and (min-width: 1024px) {
   .pc-choise {
-    bottom: 180px;
-    right: -20px;
+    bottom: 140px;
   }
 }
 @media screen and (min-width: 1200px) {
   .pc-choise {
-    right: 40px;
+    right: 70px;
   }
 }
