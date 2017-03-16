@@ -1411,12 +1411,12 @@ body {
 }
 @media screen and (min-width: 460px) {
   .pc-choise {
-    bottom: 30px;
+    bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .pc-choise {
-    bottom: 140px;
+    bottom: 60px;
     right: -40px;
   }
   .pc-choise img {
@@ -1425,16 +1425,16 @@ body {
 }
 @media screen and (min-width: 992px) {
   .pc-choise {
-    right: 0;
+    right: -20px;
   }
 }
 @media screen and (min-width: 1024px) {
   .pc-choise {
-    bottom: 140px;
+    bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .pc-choise {
-    right: 70px;
+    right: 40px;
   }
 }
