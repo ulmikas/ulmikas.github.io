@@ -1425,7 +1425,7 @@ body {
 }
 @media screen and (min-width: 992px) {
   .pc-choise {
-    right: -20px;
+    right: -30px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1435,6 +1435,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .pc-choise {
-    right: 40px;
+    right: 20px;
   }
 }
