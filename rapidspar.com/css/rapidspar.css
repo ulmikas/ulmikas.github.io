@@ -1414,7 +1414,7 @@ body {
 @media screen and (min-width: 768px) {
   .pc-choise {
     bottom: 170px;
-    right: -50px;
+    right: -20px;
   }
 }
 @media screen and (min-width: 1024px) {
