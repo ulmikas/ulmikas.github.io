@@ -1399,3 +1399,32 @@ body {
 
 .collapsible__trigger:checked + .collapsible__label + .collapsible__content {
   display: block; }
+
+.pc-choise {
+  position: absolute;
+    right: 10px;
+    bottom: 150px;
+    z-index: 2;
+}
+@media screen and (min-width: 460px) {
+  .pc-choise {
+    bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pc-choise {
+    bottom: 170px;
+    right: -50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pc-choise {
+    bottom: 180px;
+    right: -20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pc-choise {
+    right: 40px;
+  }
+}
