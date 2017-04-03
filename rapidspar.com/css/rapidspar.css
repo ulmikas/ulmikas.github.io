@@ -1282,7 +1282,7 @@ body {
   outline: none;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
 
-.btn-primary, .btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open > .dropdown-toggle.btn-primary {
+.btn-primary, .btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open > .dropdown-toggle.btn-primary, .btn-primary[disabled] {
   background: #ff9933;
   border-color: #ff9933;
   -webkit-transition: background 100ms ease-out;
@@ -1300,7 +1300,13 @@ body {
   .btn-red:hover, .btn-red.active:hover, .btn-red.focus:hover, .btn-red:active:hover, .btn-red:focus:hover, .btn-red:hover:hover, .open > .dropdown-toggle.btn-red:hover {
     background: #b34700;
     border-color: #b34700; }
-
+.btn-primary.loading {
+  background-image: url(../img/6.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  text-indent: -99999px;
+}
 .btn-secondary {
   background: none;
   border: 2px solid #ff9933;

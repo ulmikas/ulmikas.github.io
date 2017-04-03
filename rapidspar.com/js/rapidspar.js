@@ -15,6 +15,7 @@ $(document).ready(function() {
             }
         });
         if (proceed) {
+            $(this).attr('disabled','disabled');
             post_data = {
                 'name': $('input[name=name]').val(),
                 'email': $('input[name=email]').val(),
