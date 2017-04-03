@@ -15,6 +15,7 @@ $(document).ready(function() {
             }
         });
         if (proceed) {
+            $(this).addClass('loading');
             $(this).attr('disabled','disabled');
             post_data = {
                 'name': $('input[name=name]').val(),
@@ -28,6 +29,7 @@ $(document).ready(function() {
                 if (response.type == 'error') {
                   output = '<div class="error">' + response.text + '</div>';
                 } else {
+                  $(this).removeClass('loading');
                   $('#contacts .contact-us__success').fadeIn();
                   setTimeout(function(){
                     $('#contacts .contact-us__success').fadeOut();
