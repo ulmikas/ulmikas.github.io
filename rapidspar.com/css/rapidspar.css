@@ -1444,3 +1444,31 @@ body {
     right: 20px;
   }
 }
+
+.read-datasheet {
+  display: block;
+  margin-bottom: 40px;
+}
+.promo .showvideo-mb {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 460px) {
+  .promo .showvideo-mb {
+    min-width: 250px;
+  } 
+  .read-datasheet {
+    min-width: 250px;
+    display: inline-block;
+  } 
+}
+@media screen and (min-width: 768px) {
+  .promo .showvideo-mb,
+  .read-datasheet {
+    min-width: 340px;
+  }
+}
+@media screen and (max-width: 459px) {
+  .pc-choise {
+    bottom: 200px;
+  }
+}
