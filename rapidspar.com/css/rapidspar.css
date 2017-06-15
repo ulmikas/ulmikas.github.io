@@ -1494,7 +1494,7 @@ body {
     width: auto;
   }
   .promo__texts {
-    padding-bottom: 160px;
+    padding-bottom: 40px;
   }
 }
 @media screen and (max-width: 459px) {
