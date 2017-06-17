@@ -1445,9 +1445,6 @@ body {
   }
 }
 
-
-
-
 .promo__texts {
   padding-top: 30px;
 }
@@ -1455,18 +1452,6 @@ body {
   margin-top: 0.2em;
   max-block-size: .5em;
 }
-@media screen and (min-width: 460px) {
-  .promo .t1 {
-      font-size: 22px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .promo .t1 {
-      font-size: 28px;
-  }
-}
-
 .read-datasheet {
   display: block;
   margin-bottom: 40px;
@@ -1475,6 +1460,9 @@ body {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 460px) {
+  .promo .t1 {
+      font-size: 22px;
+  }
   .promo .showvideo-mb {
     width: 250px;
   } 
@@ -1495,6 +1483,11 @@ body {
   }
   .promo__texts {
     padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .promo .t1 {
+      font-size: 28px;
   }
 }
 @media screen and (max-width: 459px) {
