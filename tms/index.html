@@ -20,11 +20,12 @@
   <link rel="stylesheet" href="css/style.bundle.css">
 
   <title>
-    TMS
+    TMS. Инструменты Wiha в Тольятти
   </title>
 </head>
 
 <body>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   <section class="navigation">
     <header>
       <div class="container">
@@ -317,47 +318,60 @@
     <div id="contact-us" class="contact-us section">
   <div class="container">
     <h2 class="text-align-center">Свяжитесь с&nbsp;нами</h2>
-    <form action="">
+    <form id="contact-us-form" method="post">
       <div class="flex">
         <div class="flex-col flex-1-1">
           <span class="form-input-icon input-type-user">
-            <input class="form-input" type="text" placeholder="Ваше имя" required />
+            <input name="name" class="form-input" type="text" placeholder="Ваше имя" required />
           </span>
           <span class="form-input-icon input-type-phone">
-            <input class="form-input" type="tel" placeholder="Ваш телефон" required />
+            <input name="phone" class="form-input" type="tel" placeholder="Ваш телефон" required />
           </span>
           <span class="form-input-icon input-type-mail">
-            <input class="form-input" type="email" placeholder="Ваш email" required />
+            <input name="email" class="form-input" type="email" placeholder="Ваш email" required />
           </span>
           <span class="form-input-icon input-type-region select-wrapper">
-            <select class="form-input" name="region" id="region">
+            <select name="region" class="form-input" name="region" id="region">
               <option value="0" disabled selected="selected">Ваш регион</option>
-              <option value="02">Республика Башкортостан</option>
-              <option value="52">Нижегородская область</option>
-              <option value="56">Оренбургская область</option>
-              <option value="16">Республика Татарстан</option>
-              <option value="13">Республика Мордовия</option>
-              <option value="12">Республика Марий Эл</option>
-              <option value="63">Самарская область</option>
-              <option value="64">Саратовская область</option>
-              <option value="58">Пензенская область</option>
-              <option value="34">Волгоградская область</option>
-              <option value="18">Удмуртская Республика</option>
-              <option value="73">Ульяновская область</option>
-              <option value="21">Чувашская Республика</option>
-              <option value="36">Воронежская область</option>
-              <option value="0">Другой регион</option>
+              <option value="Республика Башкортостан">Республика Башкортостан</option>
+              <option value="Нижегородская область">Нижегородская область</option>
+              <option value="Оренбургская область">Оренбургская область</option>
+              <option value="Республика Татарстан">Республика Татарстан</option>
+              <option value="Республика Мордовия">Республика Мордовия</option>
+              <option value="Республика Марий Эл">Республика Марий Эл</option>
+              <option value="Самарская область">Самарская область</option>
+              <option value="Саратовская область">Саратовская область</option>
+              <option value="Пензенская область">Пензенская область</option>
+              <option value="Волгоградская область">Волгоградская область</option>
+              <option value="Удмуртская Республика">Удмуртская Республика</option>
+              <option value="Ульяновская область">Ульяновская область</option>
+              <option value="Чувашская Республика">Чувашская Республика</option>
+              <option value="Воронежская область">Воронежская область</option>
+              <option value="other">Другой регион</option>
             </select>
+          </span>
+          <span id="custom-region" class="form-input-icon input-type-region">
+            <input name="customregion" class="form-input" type="text" placeholder="Ваш регион" />
           </span>
         </div>
         <div class="flex-col flex-1-1">
-          <textarea class="form-input input-icon" placeholder="Ваше сообщение" required></textarea>
-          <input class="form-input input-icon form-submit" type="submit" onsubmit="javascript: console.log(this);" value="Отправить сообщение">
+          <textarea name="message" class="form-input input-icon" placeholder="Ваше сообщение" required></textarea>
+        </div>
+      </div>
+      <div class="flex flex-align-end">
+        <div class="flex-col flex-1-1 flex-align-end">
+          <div class="g-recaptcha" data-sitekey="6Ldnb1QUAAAAAPDiWHQ6XpC8syMxjjZ3lZ83lfB0"></div>
+        </div>
+        <div class="flex-col flex-1-1">
+          <input style="margin-bottom: 0;" class="form-input input-icon form-submit" type="submit" value="Отправить сообщение">
         </div>
       </div>
     </form>
   </div>
 </div>
+
+
+
     <div id="contacts" class="contacts section">
   <div class="container">
     <h2 class="text-align-center">Контакты</h2>
