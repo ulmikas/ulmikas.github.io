@@ -1,31 +1,31 @@
 
 
   <!doctype html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="edge" />
 
-  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="shortcut icon" href="favicon/favicon.ico?v2">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
   
   <link rel="stylesheet" href="css/style.bundle.css">
 
   <title>
-    TMS. Инструменты Wiha в Тольятти
+    Guardonix
   </title>
 </head>
 
 <body>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
   <section class="navigation">
     <header>
       <div class="container">
@@ -47,7 +47,7 @@
                 <a href="/#contact-us">Contact Us</a>
               </li>
               <li>
-                <a href="https://buynow.com">Buy Now</a>
+                <a class="btn-buynow" href="https://buynow.com">Buy Now</a>
               </li>
             </ul>
           </nav>
@@ -88,23 +88,32 @@
     </div>
     <!-- <div class="promo__arrow-down"></div> -->
 </div>
-    <div id="technology" class="terms section">
+    <div id="technology" class="technology section">
   <div class="container">
-    <h2 class="text-align-center">Условия оплаты и&nbsp;доставки</h2>
     <div class="flex">
-      <div class="flex-col flex-1-1 terms__left terms__text">
-        <h4>Оплата</h4>
-        <p>Оплата производится безналичным платежом на&nbsp;основании выставленного счёта по&nbsp;100% предоплате.</p>
-        <p>Минимальная сумма заказа от&nbsp;5000 руб без учёта стоимости доставки.</p>
-        <p>Счёт выставляется по&nbsp;запросу в&nbsp;течение 3-х дней с&nbsp;момента обращения и&nbsp;проработки технического задания Заказчика.</p>
-        <p>Стоимость доставки рассчитывается дополнительно в&nbsp;зависимости от&nbsp;региона и&nbsp;места доставки по&nbsp;тарифам следующих ТРК: &laquo;Деловые линии&raquo;, &laquo;Байкал-Сервис&raquo; и&nbsp;&laquo;Курьер Сервис Экспресс&raquo; и&nbsp;добавляется к&nbsp;цене заказываемого товара.</p>
+      <div class="flex-col flex-1-1 technology__left technology__text">
+        <h2 class="text-align-center">USB 3 STABILIZER</h4>
+        <img class="technology__image" src="images/technology_1.svg" alt="">
+        <p>Prevents Windows from dismounting USB storage devices during data acquisition due to bad sectors or other read instability issues.</p>
       </div>
-      <div class="flex-col flex-1-1 terms__right terms__text">
-        <h4>Доставка</h4>
-        <p>Срок поставки зависит от&nbsp;наличия позиции на&nbsp;локальном складе в&nbsp;г.Москва. Если позиция есть в&nbsp;наличии, то&nbsp;срок поставки составляет 7-14 календарных дней, если&nbsp;же товар отсутствует, то&nbsp;срок доставки уточняется дополнительно по&nbsp;запросу.</p>
-        <p>На&nbsp;всю продукцию действует гарантия 12&nbsp;месяцев с&nbsp;даты ввода в&nbsp;эксплуатацию/подписания Торг-12, УПД при соответствующем (антивандальном) обращении с&nbsp;инструментом согласно прилагаемой инструкции к&nbsp;инструменту.</p>
+      <div class="flex-col flex-1-1 technology__right technology__text">
+        <h2 class="text-align-center">USB 3 WRITE BLOCKER</h2>
+        <img class="technology__image" src="images/technology_2.svg" alt="">
+        <p>Enables forensic acquisition of USB storage devices by blocking all write commands to preserve data integrity.</p>
       </div>
     </div>
+    <button id="btn-technology" class="btn btn-primary">
+      <span>MORE INFO</span>
+      <span class="btn-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M85.6 24.2L50 59.8 14.4 24.2c-.8-.8-2.1-.8-2.9 0L5.6 30c-.8.8-.8 2.1 0 2.9l35.6 35.6 7.3 7.3c.8.8 2.1.8 2.9 0l7.3-7.3 35.6-35.6c.8-.8.8-2.1 0-2.9l-5.8-5.8c-.7-.8-2-.8-2.9 0z"/></svg>
+      </span>
+    </button>
+  </div>
+</div>
+<div class="technology__content">
+  <div class="container">
+    <p>USB protocol requires the PC and storage device to be in constant synchronization with one another. If the storage device fails to respond quickly enough, or responds irregularly due to bad sectors or other read instability issues then it may lose its current state and become desynchronized with the PC. The only option for Windows to regain access to the device is to reinitialize the whole connection, which means re-mounting the USB device in the system, thereby interrupting any data acquisition procedures which are currently in progress.</p>
+    <p>Guardonix hardware stands between the PC and the storage device, making sure that the connection to the PC is always well-maintained, regardless of what’s happening with the storage device. This way even if the storage device becomes desynchronized, only it’s connection to Guardonix hardware will be reinitialized, which will not have any impact on the PC, allowing data acquisition to proceed without interruption. Guardonix hardware even allows for the storage device to be entirely disconnected, during which time the PC will simply wait until it’s reconnected before seamlessly continuing with data acquisition.</p>
   </div>
 </div>
 
@@ -123,19 +132,13 @@
 
     <div id="about" class="about section">
   <div class="container">
+    <h2>About our company</h2>
     <div class="flex">
-      <div class="flex-col flex-1-1 about__text">
-          <h2>О&nbsp;компании ТМС</h2>
-          <p>Основана в&nbsp;2017&nbsp;г.</p>
-          <p>Одним из&nbsp;основных направлений является подбор и&nbsp;реализация слесарно-монтажного инструмента WIHA.</p>
-          <p>Инструмент WIHA&nbsp;&mdash; высококачественный немецкий брэнд, отлично зарекомендовавший себя для выполнения различного рода производственных задач.</p>
-          <p>Миссия&nbsp;&mdash; техническая поддержка, подбор соответствующего инструмента, поиск и&nbsp;различные пути решения нестандартных задач.</p>
-          <button id="btn-terms" class="btn btn-secondary">Условия сотрудничества</button>
+      <div class="about__image image image--left">
+        <img src="images/deepsparlogo-pms.svg" alt="">
       </div>
-      <div class="flex-col flex-1-1 about__image">
-        <div class="image image--right">
-          <img src="images/about.jpg" alt="">
-        </div>
+      <div class="about__text">
+        <p>Guardonix is the latest release from DeepSpar, a leading Canadian manufacturer of high-end equipment for professional forensics and data recovery since 2004. Guardonix brand of products offer better tools to help forensics investigators save time and seamlessly handle read instability issues.</p>
       </div>
     </div>
   </div>
@@ -144,54 +147,35 @@
 </div>
     <div id="contact-us" class="contact-us section">
   <div class="container">
-    <h2 class="text-align-center">Свяжитесь с&nbsp;нами</h2>
+    <h2>CONTACT US</h2>
     <form id="contact-us-form" method="post">
       <div class="flex">
         <div class="flex-col flex-1-1">
           <span class="form-input-icon input-type-user">
-            <input name="name" class="form-input" type="text" placeholder="Ваше имя" required />
-          </span>
-          <span class="form-input-icon input-type-phone">
-            <input name="phone" class="form-input" type="tel" placeholder="Ваш телефон" required />
+            <input name="name" class="form-input" type="text" placeholder="Your Name" required />
           </span>
           <span class="form-input-icon input-type-mail">
-            <input name="email" class="form-input" type="email" placeholder="Ваш email" required />
+            <input name="email" class="form-input" type="email" placeholder="Your Email" required />
           </span>
-          <span class="form-input-icon input-type-region select-wrapper">
-            <select name="region" class="form-input" name="region" id="region">
-              <option value="0" disabled selected="selected">Ваш регион</option>
-              <option value="Республика Башкортостан">Республика Башкортостан</option>
-              <option value="Нижегородская область">Нижегородская область</option>
-              <option value="Оренбургская область">Оренбургская область</option>
-              <option value="Республика Татарстан">Республика Татарстан</option>
-              <option value="Республика Мордовия">Республика Мордовия</option>
-              <option value="Республика Марий Эл">Республика Марий Эл</option>
-              <option value="Самарская область">Самарская область</option>
-              <option value="Саратовская область">Саратовская область</option>
-              <option value="Пензенская область">Пензенская область</option>
-              <option value="Волгоградская область">Волгоградская область</option>
-              <option value="Удмуртская Республика">Удмуртская Республика</option>
-              <option value="Ульяновская область">Ульяновская область</option>
-              <option value="Чувашская Республика">Чувашская Республика</option>
-              <option value="Воронежская область">Воронежская область</option>
-              <option value="other">Другой регион</option>
-            </select>
+          <span class="form-input-icon input-type-phone">
+            <input name="phone" class="form-input" type="tel" placeholder="Your Phone" required />
           </span>
-          <span id="custom-region" class="form-input-icon input-type-region">
-            <input name="customregion" class="form-input" type="text" placeholder="Ваш регион" />
+          <span class="form-input-icon input-type-phone">
+            <input name="phone" class="form-input" type="tel" placeholder="Your Company" />
           </span>
         </div>
         <div class="flex-col flex-1-1">
-          <textarea name="message" class="form-input input-icon" placeholder="Ваше сообщение" required></textarea>
+          <textarea name="message" class="form-input input-icon" placeholder="Your message" required></textarea>
         </div>
       </div>
-      <div class="flex flex-align-end">
-        <div class="flex-col flex-1-1 flex-align-end">
+      <div class="flex flex-align-end flex-justify-end">
+        <!-- <div class="flex-col flex-1-1 flex-align-end">
           <div class="g-recaptcha" data-sitekey="6Ldnb1QUAAAAAPDiWHQ6XpC8syMxjjZ3lZ83lfB0"></div>
-        </div>
-        <div class="flex-col flex-1-1">
-          <input style="margin-bottom: 0;" class="form-input input-icon form-submit" type="submit" value="Отправить сообщение">
-        </div>
+        </div> -->
+        <input style="margin-bottom: 0;" class="btn btn-secondary" type="submit" value="Submit">
+        <!-- <div class="flex-col flex-1-1">
+          <input style="margin-bottom: 0;" class="form-input input-icon form-submit" type="submit" value="Submit">
+        </div> -->
       </div>
     </form>
   </div>
@@ -201,52 +185,29 @@
 
   </div>
 
-  <div class="prefooter">
+  <!-- <div class="prefooter">
   <div class="container">
     <div class="arrow-up"></div>
   </div>
-</div>
+</div> -->
 <footer class="footer">
   <div class="container">
     <div class="flex">
       <a class="footer__logo" href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="27" viewBox="0 0 74 36"><path class="logo-ts" fill="#d12027" d="M43.91 30.18h-.51v-13l-4.15 9.16h-3.62l-4.15-9.16v13h-6.6a17.7 17.7 0 0 0 25.12 0zM28.62 5.43h3.49l5.33 11.65 5.37-11.65h7.39a17.71 17.71 0 0 0-25.52 0z"/><path fill="#a9c1d1" d="M21.05 11.36h-7.11v18.82H7.15V11.36H0V5.43h21.05zm49.03 2.16a16.92 16.92 0 0 0-2.16-1.11 20.07 20.07 0 0 0-2.11-.79 7.68 7.68 0 0 0-2.28-.36 3.29 3.29 0 0 0-1.45.27 1 1 0 0 0-.54 1 1.09 1.09 0 0 0 .32.8 2.91 2.91 0 0 0 .9.57 10.42 10.42 0 0 0 1.45.51c.57.16 1.21.36 1.94.59a25.9 25.9 0 0 1 3.08 1.15 9.53 9.53 0 0 1 2.35 1.48 5.7 5.7 0 0 1 1.5 2.08 7.47 7.47 0 0 1 .52 3 7.79 7.79 0 0 1-.82 3.75 6.66 6.66 0 0 1-2.16 2.42 9 9 0 0 1-3 1.3 14.57 14.57 0 0 1-3.4.41 19.33 19.33 0 0 1-2.79-.21 23.94 23.94 0 0 1-2.84-.6 23.26 23.26 0 0 1-2.71-.9 17.7 17.7 0 0 1-2.43-1.19l2.93-6A19.42 19.42 0 0 0 58.9 23a17.79 17.79 0 0 0 2.52.94 10 10 0 0 0 2.88.42 2.9 2.9 0 0 0 1.55-.3.88.88 0 0 0 .43-.78 1.13 1.13 0 0 0-.43-.89 3.94 3.94 0 0 0-1.2-.64c-.52-.19-1.1-.37-1.76-.56s-1.37-.41-2.11-.66A17.8 17.8 0 0 1 58 19.32a7.53 7.53 0 0 1-2-1.46A5.26 5.26 0 0 1 54.87 16a7.39 7.39 0 0 1-.37-2.41 8.27 8.27 0 0 1 .75-3.59 7.46 7.46 0 0 1 2-2.62 9 9 0 0 1 3-1.58 11.2 11.2 0 0 1 3.5-.54 12.88 12.88 0 0 1 2.65.26 19.76 19.76 0 0 1 2.49.66q1.2.4 2.25.87c.7.31 1.32.61 1.88.89z"/></svg>
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="246" height="57" viewBox="0 0 246 57.4" fill="#fff">
+          <path d="M244.3 30.2c-.5-1.1-2.8-8.9-7.9-12.7-5.8-4.4-14.2 4.7-15.2 5.7-1.7 1.7-3.4.8-3.9.4-3.6-3.3-7.6-4.7-7.6-4.7s-1.8-4-6.5-8.4c-4.9-4.5-10.7-5.1-13.8-5.6l-.2.3c3.2 2.1 8.4 11.1 6.1 11.1-2.4 0-6-1-11-3.3-5.5-2.5-17-10.4-20.4-12.8l-.3.3c2 2.7 7.6 9.7 6.2 12-1.6 2.7-9.9 5.9-13 7.1l.1.4c5.5-.2 27.3-1 32.7.8 6.2 2.1-9.1 5.3-7.1 12.8 1.9 7.5 11.3 9.9 13.1 11.9 1.8 2-1.8 5.2-1.8 5.2l2.1 1.9s1.9.2 5.1-2.2c3.3-2.5 26.4 12.1 29 5.3 2.5-6.5-.5-12.2-.5-12.2l-.3.2c1.8 4.1.7 12.5-2.4 11.1-.3-.1-.6-.2-.8-.4 1.7-6-1-10.9-1-10.9l-.3.2c1.3 2.9 1.1 7.9-.2 10.1-.9-.4-1.8-.7-2.7-1 .8-5.2-1.3-9.2-1.3-9.2l-.3.2c1 2.3 1.1 6.1.4 8.6-10.3-3.6-17.4-3.8-17.4-3.8s14.2-17 16.2-17c3.1.1 4.6 9.3 4.6 9.3l.6-.1s-.6-5.6-2.9-10c-.5-.9-.6-1.2-.7-1.4-.1-.5 1.3-2.7 2.1-3.8.7-.9 8.5-11.6 13.5-7.1s6.7 10.6 6.8 11.9c.1 1.3-1.5 5.6 1.3 4.9 2.9-.8 0-4.1-.4-5.1zm-31.1.3c-.1.4-.3.8-.7 1.2-.7.8-1.7 1.3-2.7 1.4-1.1.1-2.1-.3-2.9-1-1.6-1.4-1.8-3.9-.4-5.6.5-.6 1.1-.9 1.8-1 1.1-.1 2.2.7 3 1.4.9.8 1.8 1.7 1.8 2.8.2.3.1.5.1.8z"/><path class="st0" d="M208.9 31c-1-.8-1.1-2.3-.2-3.3.3-.4.6-.4.6-.4.5 0 1.3.6 1.9 1.1.6.5 1.3 1.2 1.3 1.7 0 .1 0 .3-.3.7-.4.5-1 .8-1.6.8-.7 0-1.3-.2-1.7-.6zM211.9 27zM14.6 48.1C12 48.1 4.5 48 4.5 48c-.9 0-2.1.1-3.8.2H0v-.6h.5c2.4-.2 3.2-.9 3.2-2.9v-24c0-2-.8-2.7-3.2-2.9H0v-.6h.7c1.7.1 2.9.2 3.8.2 0 0 8-.2 10.1-.2 9.8 0 17.7 6 17.7 14.9.1 8.5-7.4 16-17.7 16zm0-29.6c-1.2 0-7.4.2-7.4.2v23.8c0 3.4 1.2 4.4 7.4 4.4 8 0 13.8-6.8 13.8-14.6 0-8.3-6.2-13.8-13.8-13.8zM49.1 47.9s-3.5-.1-5.6-.1h-5.9c-.9 0-1.6.1-3.4.2h-.7v-.7h.5c2.4-.2 2.7-.9 2.7-2.1v-15c0-2.7-.3-3.4-2.7-3.7h-.5v-.7h.7c1.7.1 2.4.2 3.4.2H49l.8 4H49c-.6-2.3-.9-2.4-3-2.5h-6v8.4h8v1h-8v7.6c0 1.8.1 1.9 1.7 1.9h3.8c2.6 0 3.1-.6 4.4-2.8l1.1-.1c-1.5 2.4-1.6 3.1-1.9 4.4zM67.9 47.9s-3.5-.1-5.6-.1h-5.9c-.9 0-1.6.1-3.4.2h-.7v-.7h.5c2.4-.2 2.7-.9 2.7-2.1v-15c0-2.7-.3-3.4-2.7-3.7h-.5v-.7h.7c1.7.1 2.4.2 3.4.2h11.4l.8 4h-.8c-.6-2.3-.9-2.4-3-2.5l-6.2-.1v8.4h8v1h-8v7.6c0 1.8.1 1.9 1.7 1.9h3.8c2.6 0 3.1-.6 4.4-2.8l1.1-.1c-1.3 2.5-1.4 3.2-1.7 4.5zM79.1 38.6h-1V38h.6c3.4 0 6.4-2.1 6.4-5.7 0-2.7-2-5.2-5.9-5.2-2 0-2.4 0-2.4 1.5v15.9c0 2 .3 2.7 2.7 2.9h.5v.7h-.7c-1.7-.1-2.4-.2-3.4-.2h-1.6c-.9 0-1.6.1-3.4.2h-.7v-.7h.5c2.4-.2 2.7-.9 2.7-2.9v-15c0-2-.3-2.7-2.7-2.9h-.5v-.7h.7c1.7.1 2.4.2 3.4.2h.3c.6 0 1.9-.1 5.5-.1 5 0 7.9 2.5 7.9 5.5.2 4.2-4 7.1-8.9 7.1zM97.2 57.4c-3.8 0-6.3-1.4-7.4-1.8l-.7-6.3h.7c.8 4.9 3 6.9 7.4 6.9 4 0 7.3-2.1 7.4-5.8.2-3.8-2.3-6.1-7.7-9.2-3.6-2.1-6.8-4.7-6.6-8.2.2-4.8 3.9-7.6 9.2-7.6 3.6 0 4.3 1.4 7.4 1.4l.5 4.7h-.4c-1.5-4.5-4.9-4.9-7.8-4.9-3.2 0-5.5 2.2-5.7 5.1-.2 3.3 2.7 4.9 5.9 6.8 4.8 2.8 9.1 5.5 8.9 10.7-.2 4-4.8 8.2-11.1 8.2zM119 38.6h-1V38h.6c3.4 0 6.4-2.1 6.4-5.7 0-2.7-2-5.2-5.9-5.2-2 0-2.4 0-2.4 1.5v15.9c0 2 .3 2.7 2.7 2.9h.5v.7h-.7c-1.7-.1-2.4-.2-3.4-.2h-1.6c-.9 0-1.6.1-3.4.2h-.7v-.7h.5c2.4-.2 2.7-.9 2.7-2.9v-15c0-2-.3-2.7-2.7-2.9h-.5v-.7h.7c1.7.1 2.4.2 3.4.2h.3c.6 0 1.9-.1 5.5-.1 5 0 7.9 2.5 7.9 5.5.2 4.2-4.1 7.1-8.9 7.1zM150.7 47.2c-2.4-.2-2.7-.8-2.7-2.8v-.3c-.2-10.1-2.8-16.5-9.2-20.2-6.2 3.7-9 10.1-9.1 20.3v.2c0 2-.3 2.7-2.7 2.9h-.5v.7h.7c1.7-.1 2.4-.2 3.4-.2h1.8c.9 0 1.6.1 3.4.2h.7v-.7h-.5c-2.4-.2-2.7-.9-2.7-2.9v-.2c0-1 0-2.7.1-4.1H145c.1 1.3.1 3 .1 4v.3c0 2-.3 2.7-2.7 2.9h-.5v.7h.7c1.7-.1 2.4-.2 3.4-.2h1.8c.9 0 2.3 0 3.4.1h.6c1.3-.1 2.4-.1 3.4-.1h1.6c.9 0 1.6.1 3.4.2h.7v-.7h-.5c-2.4-.2-2.7-.9-2.7-2.9v-5.1h3.1c.5.3.9.5 1.1.7 1.9 1.5 16.6 17.2 25.9 17.2 2.9 0 5-.8 5.4-1.8-2 .8-4.8.8-7 .1-7-2.4-18.9-14.9-21.8-17 2.1-.8 4.7-2.5 4.7-6.6 0-3-3-5.9-7.9-5.9-3.6 0-4.9.1-5.5.1h-.3c-.9 0-1.6-.1-3.4-.2h-.7l.1.7h.5c2.4.2 2.7.9 2.7 3.7v15c0 1.2-.3 1.8-2.7 2-.9-.1-1.1-.1-1.2-.1zm-17.6-8.1c.7-7.8 2.9-12.4 5.7-13.9 2.8 1.6 5 6.2 5.7 13.9h-11.4zm23.8-.8v-9.7c0-1.5.4-1.5 2.4-1.5 3.9 0 5.9 2.9 5.9 5.6 0 3.7-1.7 4.9-3.9 5.7h-4.4z"/>
+        </svg>
       </a>
-      <span class="footer__copyright">Copyright ©&nbsp;2018 TMS</span>
+      <div class="footer__copyright">
+        <h3>DeepSpar Data Recovery Systems</h3>
+        <h4>1884 Merivale Rd., Unit 9, Ottawa, ON K2G 1E6, Canada</h4>
+        <h4>Tel: 613-225-6771, Fax: 613-225-7766<h4>
+        <h5>Monday - Friday, 9am - 5pm EST</h5>
+      </span>
     </div>
   </div>
 </footer>
 
 <script src="js/bundle.js"></script>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-  (function (d, w, c) {
-      (w[c] = w[c] || []).push(function() {
-          try {
-              w.yaCounter48502022 = new Ya.Metrika({
-                  id:48502022,
-                  clickmap:true,
-                  trackLinks:true,
-                  accurateTrackBounce:true,
-                  webvisor:true
-              });
-          } catch(e) { }
-      });
-
-      var n = d.getElementsByTagName("script")[0],
-          s = d.createElement("script"),
-          f = function () { n.parentNode.insertBefore(s, n); };
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = "//mc.yandex.ru/metrika/watch.js";
-
-      if (w.opera == "[object Opera]") {
-          d.addEventListener("DOMContentLoaded", f, false);
-      } else { f(); }
-  })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/48502022" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
 </body>
 </html>
