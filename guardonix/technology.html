@@ -63,105 +63,82 @@
  
 
   <div class="content">
-    <div class="promo">
-    <div class="container">
-        <div class="promo__block">
-            <div class="promo__logo">
-                <img src="images/hero-pic.png" alt="device" />
-                <div class="promo__logo_shadow"></div>
-            </div>
-            <div class="promo__text">
-                <h1>Meet Guardonix</h1>
-                <h2>USB3 Stabilizer and Writeblocker</h2>
-                <h3>A better writeblocker which will not allow your data acquisition process to be interrupted due to intermittent read instabilities.</h3>
+    <div class="technology-page">
 
-                <div class="promo__actions">
-                    <button id="btn-watch" class="btn btn-primary">
-                        <span>WATCH DEMO</span>
-                    </button>
-                    <a class="btn btn-secondary">
-                        <span>BUY NOW</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="promo__arrow-down"></div> -->
-</div>
-    <div id="technology" class="technology section">
-  <div class="container">
-    <div class="flex">
-      <div class="flex-col flex-1-1 technology__left technology__text">
-        <h2 class="text-align-center">STANDARD EDITION</h4>
-        <div class="technology__item">
-          <img class="technology__image" src="images/technology_2.svg" alt="">
-          <p>Enables forensic acquisition of USB storage devices by blocking all write commands to preserve data integrity.</p>
-        </div>
-        <div class="technology__item">
-          <img class="technology__image" src="images/technology_3.svg" alt="">
-          <p>Prevents Windows from dismounting USB storage devices during data acquisition due to bad sectors or other read instability issues.</p>
-        </div>
-        <div class="technology__button">
-          <a href="/technology.html" class="btn btn-primary">
-            <span class="btn-text">LEARN MORE</span>
-          </a>
+      <div class="technology-page__header" id="standard">
+        <div class="container">
+          <h2>Standard Edition</h2>
+          <img class="technology-page__image" src="images/technology_standard_image.svg" alt="">
         </div>
       </div>
-      <div class="flex-col flex-1-1 technology__right technology__text">
-        <h2 class="text-align-center">Professional Edition</h2>
-        <div class="technology__item">
-          <img class="technology__image" src="images/technology_1.svg" alt="">
-          <p>Speeds up processing of bad sectors by 5-25+ times and dramatically reduces the rate of drive degradation during imaging.</p>        
-        </div>
-        <div class="technology__item">
-          <img class="technology__image" src="images/technology_4.svg" alt="">
-          <p>Extended configuration options as well as graphical display of the sector map and speed over time.</p>
-        </div>
-        <div class="technology__button">
-          <a href="/technology.html#professional" class="btn btn-primary">
-            <span class="btn-text">LEARN MORE</span>
-          </a>
+
+      <div class="technology-page__content first">
+        <div class="container">
+          <h3>Works with Any Software</h3>
+          <p>Any Windows-based forensics or data recovery software will work seamlessly with Guardonix, as if it was working directly with the original source drive. </p>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="technology__content">
-  <div class="container">
-    <p>USB protocol requires the PC and storage device to be in constant synchronization with one another. If the storage device fails to respond quickly enough, or responds irregularly due to bad sectors or other read instability issues then it may lose its current state and become desynchronized with the PC. The only option for Windows to regain access to the device is to reinitialize the whole connection, which means re-mounting the USB device in the system, thereby interrupting any data acquisition procedures which are currently in progress.</p>
-    <p>Guardonix hardware stands between the PC and the storage device, making sure that the connection to the PC is always well-maintained, regardless of what’s happening with the storage device. This way even if the storage device becomes desynchronized, only it’s connection to Guardonix hardware will be reinitialized, which will not have any impact on the PC, allowing data acquisition to proceed without interruption. Guardonix hardware even allows for the storage device to be entirely disconnected, during which time the PC will simply wait until it’s reconnected before seamlessly continuing with data acquisition.</p>
-  </div>
-</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="about" class="about section">
-  <div class="container">
-    <h2><a href="http://deepspar.com/" target="_blank">About our company</a></h2>
-    <div class="flex">
-      <div class="about__image image image--left">
-        <a href="http://deepspar.com/" target="_blank"><img src="images/deepsparlogo-pms.svg" alt=""></a>
+      <div class="technology-page__content">
+        <div class="container">
+          <h3>Stabilizes USB Connection</h3>
+          <p>USB protocol requires the PC and storage device to be in constant synchronization with one another. If the storage device fails to respond quickly enough, or responds irregularly due to bad sectors or other read instability issues then it may lose its current state and become desynchronized with the PC, causing Windows to hang or drop the USB storage device, thereby interrupting any data acquisition procedures which are currently in progress.</p>
+          <p>Guardonix hardware stands between the PC and storage device, making sure that the connection to the PC is always well-maintained, regardless of what’s happening with the storage device. This way even if the storage device becomes desynchronized, only it’s connection to Guardonix hardware will be reinitialized, which will not have any impact on the PC, allowing data acquisition to proceed without interruption. Guardonix hardware even allows for the storage device to be entirely disconnected during imaging and all software will simply wait until it’s reconnected before seamlessly continuing with data acquisition, making sure you don’t have to start from the beginning again.</p>
+        </div>
       </div>
-      <div class="about__text">
-        <p>Guardonix is the latest release from DeepSpar, a leading Canadian manufacturer of high-end equipment for professional forensics and data recovery since 2004. Guardonix brand of products offer better tools to help forensics investigators save time and seamlessly handle read instability issues.</p>
-      </div>
-    </div>
-  </div>
-  
 
-</div>
-    <div id="contactus" class="contact-us section">
+      <div class="technology-page__content">
+        <div class="container">
+          <h3>Blocks Write Commands</h3>
+          <p>Guardonix hardware only forwards commands which will not change the contents of the attached USB drive, guaranteeing write blocking on the hardware level.</p>
+        </div>
+      </div>
+
+      <div class="technology-page__content">
+        <div class="container">
+          <h3>Blocks Filesystem Mounting</h3>
+          <p>Guardonix hardware prevents Windows from mounting the filesystem (assigning drive letters) so that the source device does not have to process unnecessary read commands and full priority is given to your chosen forensics/recovery software.</p>
+        </div>
+      </div>
+
+      <div class="technology-page__content last">
+        <div class="container">
+          <h3>Shows Status Information</h3>
+          <p>The current reading speed, current sector address being read, and current drive status (Idle, Processing, Not Responding, Disconnected) are shown in real time. All bad sectors and write attempts are logged as well.</p>
+        </div>
+      </div>
+
+      <div class="technology-page__header" id="professional">
+        <div class="container">
+          <h2>Professional Edition</h2>
+          <img class="technology-page__image" src="images/technology_professional_image.svg" alt="">
+        </div>
+      </div>
+
+
+
+      <div class="technology-page__content first">
+        <div class="container">
+          <h3>Speeds up Bad Sector Processing</h3>
+          <p>Instead of allowing the drive to get stuck retrying bad sectors for 7-20+ seconds each, Guardonix cuts bad sector processing within 1-2 seconds in most cases, dramatically improving imaging speed of drives with bad sectors and reducing further drive degradation from internal read retries. This functionality is critical when working with drives which have a non-trivial number of bad sectors.</p>
+        </div>
+      </div>
+
+      <div class="technology-page__content">
+        <div class="container">
+          <h3>Automatically Repowers Drive as Needed</h3>
+          <p>As a last resort, if the source drive suddenly stops responding to all commands, Guardonix will automatically repower it to seamlessly continue the data acquisition process.</p>
+        </div>
+      </div>
+
+      <div class="technology-page__content">
+        <div class="container">
+          <h3>Graphical Display of Speed and Sector Map</h3>
+          <p>The sector map showing good sectors, bad sectors, and not yet accessed sectors is shown, giving an easy overview of the data acquisition process so far. The speed is also shown graphically to show how consistently the drive is reading and allowing for the time-to-completion to be estimated.</p>
+        </div>
+      </div>
+
+      <div id="contactus" class="contact-us section">
   <div class="container">
     <h2>CONTACT US</h2>
     <form id="contact-us-form" method="post">
@@ -199,6 +176,7 @@
 
 
 
+    </div>
   </div>
 
   <!-- <div class="prefooter">
